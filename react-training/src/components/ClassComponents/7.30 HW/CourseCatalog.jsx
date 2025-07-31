@@ -1,4 +1,20 @@
 import React from "react";
+
+// 1.
+// class myPureComponent extends React.Component {
+//   shouldComponentUpdate(nextProps) {
+//     return this.props.car !== nextProps.car ? true : false;
+//   }
+// }
+// export default myPureComponent;
+
+// 2.
+// structureClone(obj)
+// object.assign
+// concat
+
+
+//3.
 const CourseCatalog = () => {
   const courseCatalog = [
     {
