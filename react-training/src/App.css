@@ -1,0 +1,9 @@
+.todo__submit {
+  display: flex;
+  justify-content: center;
+}
+
+.todo__lists {
+  display: flex;
+  justify-content: space-around;
+}
