@@ -154,8 +154,6 @@ const Todolist = () => {
           <ul>
             {completedTodos.map((item) => (
               <li key={item.id}>
-                {/* <span>{item.title}</span>
-              <button onClick={() => handleEdit(item.id)}>Edit</button> */}
                 {item.isEditing ? (
                   <>
                     <input

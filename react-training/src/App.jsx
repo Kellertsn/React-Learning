@@ -7,6 +7,8 @@ import CarApp from "./components/ClassComponents/CarApp/CarApp.jsx";
 import CourseCatalog from "./components/ClassComponents/7.30 HW/CourseCatalog.jsx";
 import ClassDemo from "./components/ClassComponents/ClassDemo.jsx";
 import HookDemo from "./components/HookDemo.jsx";
+import ClassTodo from "./components/Todolist/ClassTodo.jsx";
+import Gameboard from "./components/Tictactoe/Tictactoe.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,13 +16,15 @@ function App() {
   
   return (
     <>
-      <Todolist />
+      {/* <Todolist /> */}
+      {/* <ClassTodo /> */}
       {/* <CarApp /> */}
       {/* <CourseCatalog /> */}
       {/* <button id="toggle-btn" onClick={() => setShow(!show)}>
         Toggle show
       </button>
       {show && <HookDemo />} */}
+      <Gameboard />
     </>
   );
 }
