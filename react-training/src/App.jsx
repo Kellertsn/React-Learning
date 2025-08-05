@@ -9,8 +9,8 @@ import ClassDemo from "./components/ClassComponents/ClassDemo.jsx";
 import HookDemo from "./components/HookDemo.jsx";
 import ClassTodo from "./components/Todolist/ClassTodo.jsx";
 import Gameboard from "./components/Tictactoe/Tictactoe.jsx";
-import { TodoProvider } from "./components/Todolist/0805/TodoContext.jsx";
-import Todolist2 from "./components/Todolist/0805/Todolist2.jsx";
+import { TodoProvider } from "./components/Todolist/0804/TodoContext.jsx";
+import Todolist2 from "./components/Todolist/0804/Todolist2.jsx";
 
 
 
