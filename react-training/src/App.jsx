@@ -9,6 +9,10 @@ import ClassDemo from "./components/ClassComponents/ClassDemo.jsx";
 import HookDemo from "./components/HookDemo.jsx";
 import ClassTodo from "./components/Todolist/ClassTodo.jsx";
 import Gameboard from "./components/Tictactoe/Tictactoe.jsx";
+import { TodoProvider } from "./components/Todolist/0805/TodoContext.jsx";
+import Todolist2 from "./components/Todolist/0805/Todolist2.jsx";
+
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -24,7 +28,10 @@ function App() {
         Toggle show
       </button>
       {show && <HookDemo />} */}
-      <Gameboard />
+      {/* <Gameboard /> */}
+      <TodoProvider>
+        <Todolist2 />
+      </TodoProvider>
     </>
   );
 }
