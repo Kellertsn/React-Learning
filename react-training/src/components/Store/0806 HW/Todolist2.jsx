@@ -1,13 +1,13 @@
 import React, { useMemo, useRef } from 'react';
-import { useTodoContext } from './TodoContext';
+import {useSelector, useDispatch} from 'react-redux'
 
 const Todolist2 = () => {
-  const {
-    state: { input, todos },
-    dispatch
-  } = useTodoContext();
-
   const inputRef = useRef();
+  const dispatch = useDispatch();
+
+  const input = useSelector(state => state.input);
+  const todos = useSelector(state => state.todos);
+
 
   const pendingTodos = useMemo(
     () => todos.filter(t => t.status === 'pending'),
