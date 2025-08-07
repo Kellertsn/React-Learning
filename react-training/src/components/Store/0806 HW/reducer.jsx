@@ -33,10 +33,11 @@ const todoReducer = (state = initialState, action) => {
         ),
       };
     case "CHANGE_EDIT_TODO":
+      const {id,text} = action.payload
       return {
         ...state,
         todos: state.todos.map((t) =>
-          t.id === action.payload.id ? { ...t, editText: action.payload.text } : t
+          t.id === id ? { ...t, editText: text } : t
         ),
       };
     case "SAVE_EDIT_TODO":
