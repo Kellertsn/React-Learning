@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const initialState = { input: "", todos: [] };
 
-const todoReducer = (state = initialState, action) => {
+export const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_INPUT":
       return { ...state, input: action.payload };
@@ -73,5 +73,3 @@ const todoReducer = (state = initialState, action) => {
   }
 };
 
-
-export default todoReducer

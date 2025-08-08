@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import todoReducer from './reducer.jsx'; 
+import {todoReducer} from './reducer.jsx'; 
 import { addTodoTitleMiddleware } from './middleware'; 
 import { timingEnhancer } from './enhancer';
 

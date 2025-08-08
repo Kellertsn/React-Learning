@@ -10,8 +10,10 @@ import ClassTodo from "./components/Todolist/ClassTodo.jsx";
 import Gameboard from "./components/Tictactoe/Tictactoe.jsx";
 import { TodoProvider } from "./components/Todolist/0804 HW/TodoContext.jsx";
 // import Todolist2 from "./components/Todolist/0804 HW/Todolist2.jsx";
-import Todolist2 from "./components/Store/0806 HW/Todolist2.jsx";
-import { store } from './components/Store/0806 HW/store.jsx';
+// import Todolist2 from "./components/Store/0806 HW/Todolist2.jsx";
+// import { store } from './components/Store/0806 HW/store.jsx';
+import Todolist2 from './components/Store/0807 HW/Todolist2.jsx';
+import { store } from './components/Store/0807 HW/store.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
