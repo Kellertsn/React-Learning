@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todosReducer from './todosSlice';
+import todosReducer from './todoSlice';
+import {timingEnhancer} from './enhancer';
 
 export const store = configureStore({
-  reducer: {
-    todos: todosReducer,
-  },
+  reducer: todosReducer,
+  enhancers: (getDefaultEnhancers) =>
+    getDefaultEnhancers().concat(timingEnhancer),
 });
