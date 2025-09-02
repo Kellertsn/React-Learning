@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("http://localhost:3000/auth/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                username: "normalUser",
+                password: "1234"
+            })
+        })
+         .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok ");
+            }
+            return response.json();
+         }).then(data => {
+            console.log("Login successful:", data);
+            // You can store the token or handle the response data here
+            localStorage.setItem("token", data.token);
+         })
+         .catch(error => {
+            console.error("There has been a problem with your fetch operation:", error);
+         });
+    </script>
+</body>
+</html>
